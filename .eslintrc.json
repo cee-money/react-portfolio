@@ -1,0 +1,29 @@
+{
+  "ignorePatterns": ["node_modules/", "config/", "scripts/", "**/*.d.ts"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "eslint-plugin-jest-dom"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"  
+  ],
+  "rules": {
+    "no-var": "error",
+    "no-constant-condition": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
